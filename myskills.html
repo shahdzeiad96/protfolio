@@ -1,103 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>My Skills</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: "#081b29",
-              tealish: "#17a2b8",
-              softTeal: "#36727d",
-              softDark: "#464564",
-              limeHover: "greenyellow"
-            }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Skills | Shahd Fakhouri</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#081b29",
+            tealish: "#17a2b8",
+            softTeal: "#36727d",
+            softDark: "#464564",
+            limeHover: "greenyellow"
           }
         }
       }
-    </script>
-  </head>
-  <body class="bg-primary text-white">
+    }
+  </script>
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body class="bg-gradient-to-br from-primary via-softDark to-primary text-white font-sans">
 
-    <!-- Navbar -->
-    <nav class="flex justify-between items-center px-10 py-4 bg-primary shadow-lg">
-      <h1 class="text-3xl font-bold tracking-widest">SHAHD</h1>
-      <ul class="flex gap-6 text-lg">
-        <li><a href="./index.html" class="hover:text-limeHover">Home</a></li>
-        <li><a href="./aboutme.html" class="hover:text-limeHover">About Me</a></li>
-        <li><a href="./myskills.html" class="text-limeHover font-bold">My Skills</a></li>
-        <li><a href="./contact.html" class="hover:text-limeHover">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-primary/90 px-10 py-4 shadow-md flex justify-between items-center backdrop-blur">
+    <h1 class="text-3xl font-bold tracking-widest">SHAHD</h1>
+    <ul class="flex gap-6 text-lg">
+      <li><a href="./index.html" class="hover:text-limeHover">Home</a></li>
+      <li><a href="./aboutme.html" class="hover:text-limeHover">About Me</a></li>
+      <li><a href="./myskills.html" class="text-limeHover font-bold">My Skills</a></li>
+      <li><a href="./contact.html" class="hover:text-limeHover">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- Section Title -->
-    <section class="text-center my-12">
-      <h3 class="text-lg text-tealish tracking-wider">Explore My</h3>
-      <h1 class="text-4xl font-bold text-limeHover">SKILLS</h1>
-    </section>
+  <!-- Page Title -->
+  <section class="text-center pt-32 pb-12" data-aos="fade-down">
+    <h3 class="text-lg text-tealish tracking-wider mb-2">Explore My</h3>
+    <h1 class="text-4xl font-bold text-limeHover">SKILLS</h1>
+  </section>
 
-    <!-- Skills Grid -->
-    <section class="px-4 md:px-20 pb-16">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
-        <!-- Front-End -->
-        <div class="bg-softDark rounded-2xl p-8 shadow-xl">
-          <h2 class="text-2xl font-bold mb-6 text-tealish">Front-End Skills</h2>
-          <ul class="space-y-4">
-            <li class="flex items-center justify-between">
-              <span>HTML</span><img src="./images/HTML5.png" alt="HTML" class="h-6 w-6"/>
-              <span class="text-limeHover">Experienced</span>
-            </li>
-            <li class="flex items-center justify-between">
-              <span>CSS</span><img src="./images/css3.png" alt="CSS" class="h-6 w-6"/>
-              <span class="text-limeHover">Experienced</span>
-            </li>
-            <li class="flex items-center justify-between">
-              <span>JavaScript</span><img src="./images/js.png" alt="JS" class="h-6 w-6"/>
-              <span class="text-limeHover">Experienced</span>
-            </li>
-            <li class="flex items-center justify-between">
-              <span>React</span><img src="./images/react.png" alt="React" class="h-6 w-6"/>
-              <span class="text-yellow-400">Intermediate</span>
-            </li>
-            <li class="flex items-center justify-between">
-              <span>jQuery</span><img src="./images/jquery.png" alt="jQuery" class="h-6 w-6"/>
-              <span class="text-gray-300">Beginner</span>
-            </li>
-            <li class="flex items-center justify-between">
-              <span>Swift</span><img src="./images/swift.png" alt="Swift" class="h-6 w-6"/>
-              <span class="text-gray-300">Beginner</span>
-            </li>
-          </ul>
-        </div>
+  <!-- Skills Grid -->
+  <section class="px-6 md:px-20 pb-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
-        <!-- Back-End -->
-        <div class="bg-softDark rounded-2xl p-8 shadow-xl">
-          <h2 class="text-2xl font-bold mb-6 text-tealish">Back-End Skills</h2>
-          <ul class="space-y-4">
-            <li class="flex items-center justify-between">
-              <span>MySQL</span><img src="./images/mysql.png" alt="MySQL" class="h-6 w-6"/>
-              <span class="text-limeHover">Experienced</span>
-            </li>
-            <li class="flex items-center justify-between">
-              <span>Python</span><img src="./images/python (2).png" alt="Python" class="h-6 w-6"/>
-              <span class="text-limeHover">Experienced</span>
-            </li>
-            <li class="flex items-center justify-between">
-              <span>PHP</span><img src="./images/PHP.png" alt="PHP" class="h-6 w-6"/>
-              <span class="text-yellow-400">Intermediate</span>
-            </li>
-            <li class="flex items-center justify-between">
-              <span>Firebase</span><img src="./images/firebase.png" alt="Firebase" class="h-6 w-6"/>
-              <span class="text-yellow-400">Intermediate</span>
-            </li>
-          </ul>
-        </div>
+      <!-- Front-End Skills -->
+      <div class="bg-gradient-to-br from-softDark via-primary to-softDark rounded-2xl p-6 shadow-xl transform hover:scale-105 transition duration-500 hover:shadow-2xl" data-aos="fade-up">
+        <h2 class="text-2xl font-bold mb-4 text-tealish">Front-End</h2>
+        <ul class="space-y-3">
+          <li class="flex justify-between border-b border-gray-600 pb-2">HTML <span class="text-limeHover font-semibold">Experienced</span></li>
+          <li class="flex justify-between border-b border-gray-600 pb-2">CSS <span class="text-limeHover font-semibold">Experienced</span></li>
+          <li class="flex justify-between border-b border-gray-600 pb-2">JavaScript <span class="text-limeHover font-semibold">Experienced</span></li>
+          <li class="flex justify-between border-b border-gray-600 pb-2">React <span class="text-yellow-400 font-semibold">Intermediate</span></li>
+          <li class="flex justify-between border-b border-gray-600 pb-2">jQuery <span class="text-gray-300 font-semibold">Beginner</span></li>
+        </ul>
       </div>
-    </section>
 
-  </body>
+      <!-- Back-End Skills -->
+      <div class="bg-gradient-to-br from-softDark via-primary to-softDark rounded-2xl p-6 shadow-xl transform hover:scale-105 transition duration-500 hover:shadow-2xl" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="text-2xl font-bold mb-4 text-tealish">Back-End</h2>
+        <ul class="space-y-3">
+          <li class="flex justify-between border-b border-gray-600 pb-2">MySQL <span class="text-limeHover font-semibold">Experienced</span></li>
+          <li class="flex justify-between border-b border-gray-600 pb-2">Python <span class="text-limeHover font-semibold">Experienced</span></li>
+          <li class="flex justify-between border-b border-gray-600 pb-2">PHP <span class="text-yellow-400 font-semibold">Intermediate</span></li>
+          <li class="flex justify-between border-b border-gray-600 pb-2">Firebase <span class="text-yellow-400 font-semibold">Intermediate</span></li>
+        </ul>
+      </div>
+
+      <!-- Other Skills -->
+      <div class="bg-gradient-to-br from-softDark via-primary to-softDark rounded-2xl p-6 shadow-xl transform hover:scale-105 transition duration-500 hover:shadow-2xl" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="text-2xl font-bold mb-4 text-tealish">Other Skills</h2>
+        <ul class="space-y-3">
+          <li class="flex justify-between border-b border-gray-600 pb-2">Git & GitHub <span class="text-limeHover font-semibold">Experienced</span></li>
+          <li class="flex justify-between border-b border-gray-600 pb-2">Bootstrap <span class="text-limeHover font-semibold">Experienced</span></li>
+          <li class="flex justify-between border-b border-gray-600 pb-2">Tailwind CSS <span class="text-limeHover font-semibold">Experienced</span></li>
+          <li class="flex justify-between border-b border-gray-600 pb-2">Figma <span class="text-yellow-400 font-semibold">Intermediate</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, once: true });</script>
+
+</body>
 </html>
